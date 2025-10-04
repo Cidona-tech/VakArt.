@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacoas Original Art</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    #backToTop { display: none; }
+  </style>
+</head>
+<body class="bg-[#F8F5F1] text-[#3B3B3B] font-sans">
+
+  <!-- Header / Navigation -->
+  <header class="bg-[#C2B280] text-white p-6 shadow-md fixed top-0 w-full z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Vacoas Original Art</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#gallery" class="hover:underline">Gallery</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="relative bg-[#556B2F] text-white text-center py-32 mt-20">
+    <h2 class="text-5xl font-bold mb-4">Discover our product</h2>
+    <p class="max-w-xl mx-auto text-lg">Sustainable • Authentic • Inspired by Nature</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 md:px-16 bg-[#E8E6DA] text-center">
+    <h2 class="text-3xl font-bold mb-6">About us</h2>
+    <p class="max-w-4xl mx-auto leading-relaxed text-[#4B4B4B]">
+       A complete guide on how to bring your imagination to life. Through our step-by-step videos, you'll be able to create any possible crafts you desire- be it baskets, mats, hats or bags. And guess what? After acquiring the appropriate skills and techniques here, you'll be able to weave your very own and unique designs.
+<br><br>
+     After learning how to weave through our videos, you will be able to create your very own design. What does this imply? You won't have to spend a large amount of money on new bags/hats or any other related things, for you will have the ability to make it yourself. You will also contribute in reducing our carbon footprint. As the manufactured items are a 100% biodegradable, long lasting and very sturdy, you won't need to purchase plastic bags anymore.  
+Furthermore, you may also start a new business through this, thus providing yourself with the opportunity of becoming self-employed and a way of earning money. 
+
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="Gallery" class="py-16 bg-[#F1EAD7]">
+    <h2 class="text-3xl font-bold text-center mb-8">For Your Inspiration</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-16">
+      <img src="images/photo1.jpg" alt="Product 1" class="rounded-xl shadow-md">
+      <img src="images/photo2.jpg" alt="Product 2" class="rounded-xl shadow-md">
+      <img src="images/photo3.jpg" alt="Product 3" class="rounded-xl shadow-md">
+      <img src="images/photo4.jpg" alt="Photo 4" class="rounded-xl shadow-md">
+      <img src="images/photo5.jpg" alt="Photo 5" class="rounded-xl shadow-md">
+      <img src="images/photo6.jpg" alt="Photo 6" class="rounded-xl shadow-md">
+      <img src="images/photo7.jpg" alt="Photo 7" class="rounded-xl shadow-md">
+      <img src="images/photo8.jpg" alt="Photo 8" class="rounded-xl shadow-md">
+      <img src="images/photo9.jpg" alt="Photo 9" class="rounded-xl shadow-md">
+      <img src="images/photo10.jpg" alt="Photo 10" class="rounded-xl shadow-md">
+      <img src="images/photo11.jpg" alt="Photo 11" class="rounded-xl shadow-md">
+      <img src="images/photo12.jpg" alt="Photo 12" class="rounded-xl shadow-md">
+    </div>
+     <div class="mt-12 max-w-4xl mx-auto space-y-8">
+<h3 class="text-2xl font-bold text-center mb-4">Our Story in Motion</h3>
+<video controls class="w-full rounded-xl shadow-md"><source src="videos/video1.mp4" type="video/mp4"></video>
+<video controls class="w-full rounded-xl shadow-md"><source src="videos/video2.mp4" type="video/mp4"></video>
+<video controls class="w-full rounded-xl shadow-md"><source src="videos/video3.mp4" type="video/mp4"></video>
+<video controls class="w-full rounded-xl shadow-md"><source src="videos/video4.mp4" type="video/mp4"></video>
+</div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 md:px-16 text-center bg-[#E8E6DA]">
+    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border">
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border">
+      <textarea placeholder="Your Message" class="w-full p-3 rounded-lg border h-32"></textarea>
+      <button class="bg-[#556B2F] text-white px-6 py-3 rounded-lg hover:bg-[#3B3B3B]">Send</button>
+    </form>
+    <p class="mt-6">Or reach us at <strong>vak.art_ on instagram</strong></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3B3B3B] text-white text-center py-6">
+    <p>© 2025 V.O-Kit | Bring life to your imagination 🌱</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" 
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          class="fixed bottom-6 right-6 bg-[#556B2F] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#3B3B3B]">
+    ↑ Top
+  </button>
+
+  <!-- Script to Show/Hide Button -->
+  <script>
+    const btn = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
